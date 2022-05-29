@@ -1,0 +1,5 @@
+The script tests different models for three different kinds of precisions, namely float, half, and double. To benchmark the models some default values are used, such as number of tests = 50, batch size = 12, number of classes = 1000, number of GPU = 1, etc. A random dataset of size 3x224x224 is created to do the benchmarking.
+
+To test the performance running time was considered for training and inference for different models along with different precisions.
+
+This script was run on a machine with an NVIDIA TITAN Xp GPU and 8 CPUs. The CUDA version was 11.6, and cudnn version was 8303. To complete the whole run it tool=k 1 hour 8 minutes and 21 seconds. The smallest recorded time was ~ 10 ms for a model while the highest recoded time for a model was over 2000 ms.
